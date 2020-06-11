@@ -15,5 +15,9 @@ echo $a $b $c | awk '{print "Result3 : " $3 + ( $1 / $2 ) }' #res3=$(( c + (a / 
 echo "Result4 : " $res4
 dic=([a1]=$res1 [a2]=$res2 [a3]=$res3 [a4]=$res4)
 echo ${dic[@]}
+array=(${dic[@]}) #read the dic values into the array
+echo ${array[@]} # printing the array values
+
+
 
 
