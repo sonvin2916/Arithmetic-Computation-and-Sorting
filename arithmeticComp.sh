@@ -18,6 +18,11 @@ echo ${dic[@]}
 array=(${dic[@]}) #read the dic values into the array
 echo ${array[@]} # printing the array values
 
+#Descending order
 
+for i in $( echo ${dic[@]} | tr ' ' '\n' | sort -nr )
+do
+    echo "Printing the numbers in descending order: $i"
+done
 
 
