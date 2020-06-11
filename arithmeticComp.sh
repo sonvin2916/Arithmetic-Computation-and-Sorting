@@ -25,4 +25,12 @@ do
     echo "Printing the numbers in descending order: $i"
 done
 
+echo " "
+#Ascending order
+
+for i in $( echo ${dic[@]} | tr ' ' '\n' | sort -n )
+do
+    echo "Printing the numbers in ascending order: $i"
+done
+
 
